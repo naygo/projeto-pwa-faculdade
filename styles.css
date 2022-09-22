@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #1a1a1a;
+  --light: #f5f5f5;
+  --gray: #969696;;
+  --gray-dark: #707070;
+  --green: #259948;
+  --green-light: #28743f;
+  --red: #f55d5d;
+  --red-dark: #ff4343;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+section {
+  padding: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.top-bar {
+  background-color: var(--green);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--green);
+}
+
+.header-add input {
+  margin: 0 0.2rem;
+  width: 50%;
+}
+
+.button-add {
+  padding: 0 0.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--dark);
+  color: var(--green);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.button-add:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.button-disabled {
+  background-color: var(--gray) !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.header-add input:focus {
+  outline: 3px solid var(--dark);
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 0.5rem;
+  height: 100%;
+}
+
+.book-title:hover {
+  background-color: var(--green);
+  border-bottom: 1px solid var(--dark);
+  cursor: pointer;
+}
+
+.book-title input {
+  width: 1rem;
+  height: 1rem;
+}
+
+.book-title h3 {
+  margin-left: 0.5rem;
+}
+
+.book-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem;
+  background-color: var(--green);
+}
+
+.book-info a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.book-info a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ADD BOOK */
+#screen-two,
+#screen-three {
+  height: 80vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.form-content h1 {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  margin: 0.5rem 0;
+}
+
+.form-content input:focus {
+  outline: 3px solid var(--green);
+}
+
+.form-content .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-content button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--green);
+  color: var(--dark);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-content button:hover {
+  background-color: var(--green-light);
+}
+
+.form-content button:first-child {
+  margin-right: 0.5rem;
+  background-color: var(--gray);
+}
+
+.form-content button:first-child:hover {
+  background-color: var(--gray-dark);
+}
+
+#form-edit-book .delete-button {
+  background-color: var(--red);
+  margin-top: 1rem;
+}
+
+#form-edit-book .delete-button:hover {
+  background-color: var(--red-dark);
+}

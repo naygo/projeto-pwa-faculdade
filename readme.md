@@ -1,6 +1,7 @@
 # Projeto 1 - Aplicação web progressiva
 
 **Nome da aplicação:** My Books
+
 **Criadora:** Nayla Cristina Gomes Carvalho da Silva
 
 Esta aplicação tem como objetivo cadastrar e listar os livros que uma pessoa está lendo para ajudar a controlar sua leitura e guardar os livros que já. Além de cadastrar e listar, ela também permite a edição das informções de um livro já cadastrado, exclusão do mesmo. Também há a possibilidade de marcar livros como lidos através de um checkbox e também filtrá-los por título.
